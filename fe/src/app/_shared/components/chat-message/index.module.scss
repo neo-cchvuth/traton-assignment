@@ -1,0 +1,54 @@
+.chat-message {
+  position: relative;
+  display: inline-flex;
+  align-items: flex-start;
+  justify-items: flex-start;
+  align-self: flex-start;
+  background-color: lightseagreen;
+  padding: 4px 8px;
+  border-radius: 8px;
+  text-align: start;
+  gap: 8px;
+  margin-top: 32px;
+
+  &.me {
+    flex-direction: row-reverse;
+    text-align: end;
+    align-self: flex-end;
+    background-color: skyblue;
+
+    .user {
+      left: auto;
+      right: 0;
+      flex-direction: row-reverse;
+    }
+  }
+
+  .message {
+    margin-top: 8px;
+    white-space: pre-wrap;
+  }
+
+  .texts {
+    display: flex;
+    flex-direction: column;
+
+    .user {
+      position: absolute;
+      top: -24px;
+      left: 0;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      :nth-child(1) {
+        font-weight: bold;
+      }
+
+      :nth-child(2) {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.chat-container {
+  width: 480px;
+  max-width: calc(100vw - 48px);
+  height: 100%;
+  background-color: #f1f1f1;
+  color: black;
+  margin: 16px;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  gap: 8px;
+
+  .pusher {
+    flex: 1;
+  }
+
+  .messages {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    gap: 8px;
+  }
+}

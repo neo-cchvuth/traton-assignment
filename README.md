@@ -8,7 +8,7 @@
 ## How to run
 
 - Install Docker
-- Configure `.env` in `be` folder
+- Create `.env` from `.env.example` in `be` folder and configure `OPENAI_API_KEY`
 
 ```
  > docker compose up
@@ -19,9 +19,11 @@
 - MongoDB available at `localhost:27017` or `db:27017` (through docker network)
 
 ## Test users
+
 Test users are pre populated when MongoDB is initialized through `docker compose`.
 
 Usernames with password `secret`
+
 - rebecka1
 - rebecka2
 - ...
